@@ -1,7 +1,9 @@
 # Base configuration
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
+gems:
+  - jekyll-redirect-from
 
 collections:
   pages:
