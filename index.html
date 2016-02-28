@@ -1,10 +1,6 @@
 ---
 layout: default
 subtemplates: [intro, instances, index]
+redirect_to:
+  - https://eregs.github.io/
 ---
-
-{% for subtemplate in page.subtemplates %}
-  {% capture subtemplate_file %}{{subtemplate}}.md{% endcapture %}
-  {% capture markdown %}{% include {{subtemplate_file}} %}{% endcapture %}
-  {{ markdown | markdownify }}
-{% endfor %}
